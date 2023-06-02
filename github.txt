@@ -1,0 +1,9 @@
+https://github.com/in28minutes/spring-microservices
+
+https://github.com/in28minutes/spring-microservices-v2/tree/main/02.restful-web-services
+
+Help for Debugging Problems:
+Here's the code backup at the end of step 05: https://github.com/in28minutes/spring-microservices-v2/blob/main/02.restful-web-services/Step05.md
+
+Step by Step changes are detailed here: https://github.com/in28minutes/spring-microservices-v2/blob/main/02.restful-web-services/01-step-by-step-changes/v2.md#step-03
+

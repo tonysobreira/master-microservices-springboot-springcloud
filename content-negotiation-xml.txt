@@ -1,0 +1,10 @@
+
+	<dependency>
+	  	<groupId>com.fasterxml.jackson.dataformat</groupId>
+	  	<artifactId>jackson-dataformat-xml</artifactId>
+	</dependency>
+
+
+Headers
+KEY: Accept
+VALUE: application/xml

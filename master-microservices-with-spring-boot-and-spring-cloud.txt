@@ -1,0 +1,9 @@
+1 spring cloud config server and bus
+2 load balancing with ribbon and feign
+3 implement naming server with eureka
+4 implementing api gateway with zuul
+5 distributed tracing with zipkin
+6 fault tolerance with hystrix
+
+A web service is a software system designed to support interoperable machine-to-machine interaction over a network
+
