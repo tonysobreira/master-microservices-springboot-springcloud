@@ -1,0 +1,7 @@
+
+right click -> run as -> run configurations...
+
+right click -> duplicate
+
+VM arguments
+-Dserver.port=8001
