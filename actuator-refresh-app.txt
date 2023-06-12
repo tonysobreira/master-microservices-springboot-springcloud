@@ -1,0 +1,7 @@
+POST
+http://localhost:8081/actuator/refresh
+
+amqp
+POST
+http://localhost:8080/actuator/bus-refresh
+
