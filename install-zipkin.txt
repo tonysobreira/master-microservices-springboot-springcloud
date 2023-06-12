@@ -1,0 +1,16 @@
+https://zipkin.io/pages/quickstart
+
+java -jar zipkin.jar
+
+http://127.0.0.1:9411/
+
+
+##
+set RABBIT_URI=amqp://localhost
+java -jar zipkin-server-2.12.9-exec.jar
+
+##
+
+##docker
+docker run -d -p 9411:9411 openzipkin/zipkin
+

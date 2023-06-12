@@ -1,0 +1,4 @@
+https://www.erlang.org/downloads
+
+https://www.rabbitmq.com/install-windows.html
+

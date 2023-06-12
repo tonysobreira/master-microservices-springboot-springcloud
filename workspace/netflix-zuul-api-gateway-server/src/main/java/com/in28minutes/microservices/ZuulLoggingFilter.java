@@ -12,7 +12,7 @@ import com.netflix.zuul.exception.ZuulException;
 
 @Component
 public class ZuulLoggingFilter extends ZuulFilter {
-	
+
 	private Logger logger = LoggerFactory.getLogger(this.getClass());
 
 	@Override
@@ -24,7 +24,7 @@ public class ZuulLoggingFilter extends ZuulFilter {
 	public Object run() throws ZuulException {
 		HttpServletRequest request = RequestContext.getCurrentContext().getRequest();
 		logger.info("request -> {} request uri -> {}", request, request.getRequestURI());
-		
+
 		return null;
 	}
 
@@ -37,7 +37,5 @@ public class ZuulLoggingFilter extends ZuulFilter {
 	public int filterOrder() {
 		return 1;
 	}
-	
-	
 
 }
