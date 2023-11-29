@@ -1,0 +1,16 @@
+create folder: git-localconfig-repo
+
+git init
+
+create file: limits-service.properties
+
+edit:
+limits-service.minimum=4
+limits-service.maximum=996
+
+git add *
+git commit -m "adding limits-service.properties"
+
+http://localhost:8888/limits-service/default
+http://localhost:8888/limits-service/dev
+http://localhost:8888/limits-service/qa
