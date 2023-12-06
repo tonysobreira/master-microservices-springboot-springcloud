@@ -1,0 +1,4 @@
+right click -> open config
+duplicate ->
+Arguments -> VM arguments -> -Dserver.port=8001
+
