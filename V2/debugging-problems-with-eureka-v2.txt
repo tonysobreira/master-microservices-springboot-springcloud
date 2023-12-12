@@ -1,0 +1,23 @@
+Debugging Problems with Eureka - V2
+Debugging microservices problems can be difficult as there are multiple components involved.
+
+Step by Step instructions is provided in the troubleshooting guide to help you troubleshoot frequently occurring problems.
+
+Using the Chrome Browser is recommended.
+
+
+
+COMPLETE DEBUGGING GUIDE
+
+https://github.com/in28minutes/spring-microservices-v3/blob/main/03.microservices/01-step-by-step-changes/readme.md#eureka---step-19-to-21
+
+
+
+Top Recommendation From Debugging Guide:
+
+Give these settings a try individually in application.properties of all microservices (currency-exchange, currency-conversion) to see if they help
+
+eureka.instance.prefer-ip-address=true
+OR
+
+eureka.instance.hostname=localhost
