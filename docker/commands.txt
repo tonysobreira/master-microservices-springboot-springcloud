@@ -1,4 +1,120 @@
 anti$$R3d3s
 
-docker run in28min/todo-rest-api-h2:1.0.0.RELEASE
+docker run -p 5000:5000 in28min/todo-rest-api-h2:1.0.0.RELEASE
+
+##detached mode
+docker run -p 5000:5000 -d in28min/todo-rest-api-h2:1.0.0.RELEASE
+docker run -p 5001:5000 -d in28min/todo-rest-api-h2:1.0.0.RELEASE
+docker run -p 5002:5000 -d in28min/todo-rest-api-h2:0.0.1-SNAPSHOT
+
+
+docker logs <id>
+#tail logs
+docker logs -f <id>
+
+
+-p 5000:5000 => -p {HostPort}:{ContainerPort}
+
+http://localhost:5000/hello-world
+http://localhost:5000/hello-world-bean
+http://localhost:5000/jpa/users/in28minutes/todos
+
+
+##list running containers
+docker container ls
+##running or not
+docker container ls -a
+
+
+
+
+##images commands
+docker images
+
+#tag
+docker tag in28min/todo-rest-api-h2:1.0.0.RELEASE in28min/todo-rest-api-h2:latest
+docker images
+
+#ex.: it will pull latest, might not be the most recent and might no even be present
+docker pull mysql
+
+#search images
+docker search mysql
+
+#history
+docker image history <image-id>
+
+#show steps of created image
+docker image inspect <image-id>
+
+#remove image
+docker image remove <image-id>
+
+##official images, like Java, MySQL, PostgreSQL
+
+#restart policy, no (default), always
+#when restart docker desktop, container automaticaly starts
+docker run -p 5000:5000 -d --restart=always in28min/todo-rest-api-h2:1.0.0.RELEASE
+
+
+
+
+
+##container commands
+docker container stop <id>
+docker container start <id>
+docker container pause <id>
+docker container unpause <id>
+docker container inspect <id>
+
+#list
+docker container ls -a
+
+#remove all stopped container
+docker container prune
+
+##stop => SIGTERM => graceful shutdown
+docker container stop <id>
+##kill => SIGKILL => immediately terminates the process
+docker container kill <id>
+
+#show events, open another tab to see it
+docker events
+
+#check the top process that is running in specific container
+docker top
+
+#show all the stats of containers that are running
+docker stats
+
+#memory and cpu limits
+#512mb, 1G
+#100000 = 100%, 5000 = 5%
+
+#very slow to start up 5%
+docker run -p 5001:5000 -m 512m --cpu-quota 5000 -d in28min/todo-rest-api-h2:1.0.0.RELEASE
+
+#50% cpu
+docker run -p 5001:5000 -m 512m --cpu-quota 50000 -d in28min/todo-rest-api-h2:1.0.0.RELEASE
+
+#look docker daemon manages
+docker system df
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+https://hub.docker.com/r/in28min/todo-rest-api-h2
+
+
 
