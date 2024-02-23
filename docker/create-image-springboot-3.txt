@@ -1,0 +1,37 @@
+pom.xml
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+				<configuration>
+					<image>
+						<name>tonysobreira/mmv3-${project.artifactId}:${project.version}</name>
+					</image>
+					<pullPolicy>IF_NOT_PRESENT</pullPolicy>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+
+
+#commands
+run as -> maven build...
+Goals: spring-boot:build-image -DskipTests
+
+#command line
+mvn spring-boot:build-image -DskipTests
+
+#run local created image
+docker run -p 8000:8000 tonysobreira/mmv3-currency-exchange-service:0.0.1-SNAPSHOT
+docker run -p 8761:8761 tonysobreira/mmv3-naming-server:0.0.1-SNAPSHOT
+
+
+#docker-compose
+docker-compose up
+docker-compose down
+
+
+
+
