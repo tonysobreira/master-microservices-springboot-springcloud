@@ -1,0 +1,37 @@
+kubectl delete all -l app=currency-exchange
+
+kubectl delete all -l app=currency-conversion
+
+kubectl apply -f deployment.yaml
+
+
+#wait ip assign
+kubectl get svc --watch
+
+
+
+
+
+
+kubectl get pods
+#see new version
+kubectl logs currency-conversion-5447c85f54-wkzv7
+
+
+
+#configmap
+kubectl create configmap currency-conversion --from-literal=CURRENCY_EXCHANGE_URI=http://currency-exchange
+
+kubectl get configmap
+
+kubectl get configmap currency-conversion
+
+kubectl get configmap currency-conversion -o yaml
+
+#all the typical features which are needed by microservices are provided for free in kubernetes.
+-service discovery
+-load balancing
+-centralized configuration (configmap)
+
+
+

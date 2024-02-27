@@ -1,0 +1,19 @@
+watch -n 0.1 curl http://34.29.56.171:8100/currency-conversion-feign/from/USD/to/INR/quantity/10
+
+google cloud console
+
+cluster
+
+View Logs
+View GKE Dashboard
+
+
+2024-02-27T19:37:49.671Z  INFO [currency-exchange,967c7ec3b3f436d7dfa4c159e8514dbc,e31ac545346ef801] 1 --- [nio-8000-exec-2] c.i.m.c.CurrencyExchangeController       : retrieveExchangeValue called with USD to INR
+
+
+#Run Query
+resource.type="k8s_container"
+textPayload:967c7ec3b3f436d7dfa4c159e8514dbc
+
+
+

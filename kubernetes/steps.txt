@@ -1,0 +1,32 @@
+search: kubernetes
+create cluster
+
+In the cluster -> connect
+
+copy command
+
+paste in google cloud shell
+
+gcloud container clusters get-credentials in28minutes-cluster --zone us-central1-c --project grand-analyzer-415512
+
+#kubectl
+
+#deploy new application, increase number of instances, deploy new version
+
+#deploy application
+kubectl create deployment hello-world-rest-api --image=in28min/hello-world-rest-api:0.0.1.RELEASE
+
+#hub docker: https://hub.docker.com/u/in28min
+
+#expose deployment
+kubectl expose deployment hello-world-rest-api --type=LoadBalancer --port=8080
+
+#test api
+menu: Gateways, Services & Ingress
+open endpoint url
+/hello-world
+/hello-world-bean
+
+
+
+

@@ -1,0 +1,15 @@
+#kubernetes uses probes to check the health of a microservice
+	#if readiness probe is not successful, no traffic is sent
+	#if liveness probe is not successful, pod is restarted
+
+#spring boot actuator (>=2.3) provides inbuilt readiness and liveness probes
+/health/readiness
+/health/liveness
+
+#configure yaml
+
+#if its not ready, it will not terminate the old version
+
+
+
+

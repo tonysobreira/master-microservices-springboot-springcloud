@@ -1,0 +1,61 @@
+#pods
+
+#smallest deployable unit
+#container lives inside a pod, can contain multiple containers
+
+DESCRIPTION:
+    Pod is a collection of containers that can run on a host. This resource is
+    created by clients and scheduled onto hosts.
+
+#NODES can have multiple PODS and PODS can have multiple CONTAINERS
+
+
+kubectl scale deployment hello-world-rest-api --replicas=3
+
+#replicasets
+#keep monitoring number of pods, if there are lesser than needed, it creates, even if delete pods
+
+#increase pods
+
+DESCRIPTION:
+    ReplicaSet ensures that a specified number of pod replicas are running at
+    any given time.
+
+
+
+#deployment
+#can set new image, with new version
+kubectl set image deployment hello-world-rest-api hello-world-rest-api=in28min/hello-world-rest-api:0.0.2.RELEASE
+
+#default deployment strategy: rolling updates
+
+
+
+#services
+#allow receive traffic through a permanent lifetime ip address
+
+#in google cloud search: load balancer
+
+kubectl get services
+
+DESCRIPTION:
+    Service is a named abstraction of software service (for example, mysql)
+    consisting of local port (for example 3306) that the proxy listens on, and
+    the selector that determines which pods will answer requests sent through
+    the proxy.
+
+
+#master nodes: manages clusters
+#api server - distributed database - scheduler - controller manager
+
+#worker nodes: run applications
+#node agent - networking component - container runtime - pods
+
+
+
+
+
+
+
+
+

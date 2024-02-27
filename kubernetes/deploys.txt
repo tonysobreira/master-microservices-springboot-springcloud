@@ -1,0 +1,6 @@
+#example, problem with image when deploy, it keeps running the old version
+
+#undo deployment
+kubectl rollout undo deployment currency-exchange --to-revision=1
+
+

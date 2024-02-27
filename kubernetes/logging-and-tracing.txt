@@ -1,0 +1,18 @@
+#search google cloud console
+api 
+-> Api & Services 
+-> + ENABLE APIS AND SERVICES
+-> search: logging
+-> Cloud Logging API
+	-> Manage: Enable (if disable)
+
+-> Api & Services 
+-> + ENABLE APIS AND SERVICES
+-> search: stackdriver
+-> enable all (Stackdriver API and Cloud Monitoring API)
+
+enable before deploy microservices
+
+
+
+
