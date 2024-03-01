@@ -1,0 +1,8 @@
+When adding new dependencies:
+
+right click -> gradle -> refresh gradle project
+
+#
+implementation group:'org.springframework', name:'spring-core', version:'10.0.3.RELEASE'
+shortcut:
+implementation 'org.springframework:spring-core:10.0.3.RELEASE'
