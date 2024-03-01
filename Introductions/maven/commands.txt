@@ -1,0 +1,48 @@
+Run as -> Maven Build...
+#full pom.xml
+help:effective-pom
+#list dependency tree
+dependency:tree
+#install build (war/jar)
+mvn clean install
+
+
+dependencyManagement
+defines versions of dependencies that you want to use
+
+
+maven build
+
+#compile
+can be used in source code
+#test
+can only be used in unit tests
+
+#maven central repository
+contains jars (and others) indexed by artifact id and group id
+stores all versions of dependecies
+repositories -> repository
+pluginRepositories -> pluginRepository
+
+#commands
+mvn --version
+mvn compile (source files)
+mvn test-compile (source and test files)
+mvn clean (delete target repository)
+mvn test (run unit tests)
+mvn package (create a jar)
+mvn help:effective-pom (create effective pom)
+mvn dependency:tree (show depencies tree)
+
+mvn clean package (delete target and create jar)
+
+
+
+
+
+
+
+
+
+
+

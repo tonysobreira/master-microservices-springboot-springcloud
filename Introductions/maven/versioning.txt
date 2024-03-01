@@ -1,0 +1,21 @@
+#version scheme
+MAJOR.MINOR.PATCH[-MODIFIER]
+
+MAJOR: significant amount of work to upgrade (10.0.0 to 11.0.0)
+MINOR: little to no work to upgrade (10.1.0 to 10.2.0)
+PATCH: no work to upgrade (10.5.4 to 10.5.5)
+MODIFIER: RELEASE, RELEASE CANDIDATE (RC), MILESTONE (M), SNAPSHOT
+	Milestones - M1, M2, ... (10.3.0-M1, 10.3.0-M2)
+	Release candidates - RC1, RC2, ... (10.3.0-RC1, 10.3.0-RC2)
+	Snapshots - SNAPSHOT (Versions under development)
+	Release - Modifier will be ABSENT (10.0.0, 10.1.0)
+
+Latest releases don't have RELEASE suffix
+
+Example versions in order:
+	10.0.0-SNAPSHOT, 10.0.0-M1, 10.0.0-M2, 10.0.0-RC1, 10.0.0-RC2, 10.0.0, ...
+
+Recommendations:
+	Avoid SNAPSHOTs
+	Use only Released versions in PRODUCTION
+
